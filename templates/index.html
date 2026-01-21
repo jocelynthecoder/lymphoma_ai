@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lymphoma Classification</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-content">
+            <div class="header-left">
+                <h1 class="header-title">Lymphoma Classification</h1>
+                <p class="header-subtitle">AI-Powered Lymphoma Detection with Flask</p>
+            </div>
+            <nav class="header-nav">
+                <a href="#" class="nav-link">
+                    <i class="fas fa-user"></i> About
+                </a>
+                <a href="#" class="nav-link">
+                    <i class="fas fa-phone"></i> Contact
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="content-container">
+            <!-- Left Panel: Upload -->
+            <div class="panel upload-panel">
+                <h2 class="panel-title">Upload Tissue Image</h2>
+                <p class="panel-instruction">Choose a histopathology image to classify.</p>
+                
+                <div class="upload-zone" id="uploadZone">
+                    <i class="fas fa-arrow-up upload-icon"></i>
+                    <p class="upload-text">Drop image here or click to select</p>
+                </div>
+                
+                <input type="file" id="fileInput" accept="image/jpeg,image/jpg,image/png,image/webp" style="display: none;">
+                
+                <button class="upload-button" id="uploadButton">Upload Image</button>
+                
+                <p class="supported-formats">Supported formats: JPG, PNG, WebP</p>
+            </div>
+
+            <!-- Right Panel: Prediction Result -->
+            <div class="panel result-panel">
+                <h2 class="panel-title">Prediction Result</h2>
+                
+                <div class="result-content" id="resultContent">
+                    <div class="placeholder-message">
+                        <p>Upload an image to see prediction results</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Feature Cards -->
+        <div class="feature-cards">
+            <div class="feature-card">
+                <i class="fas fa-tachometer-alt feature-icon"></i>
+                <h3 class="feature-title">Quick and Accurate</h3>
+                <p class="feature-description">Get instant and precise lymphoma classification results.</p>
+            </div>
+            
+            <div class="feature-card">
+                <i class="fas fa-cog feature-icon"></i>
+                <h3 class="feature-title">How It Works</h3>
+                <p class="feature-description">Upload an image and see the AI model's prediction.</p>
+            </div>
+            
+            <div class="feature-card">
+                <i class="fas fa-brain feature-icon"></i>
+                <h3 class="feature-title">Model Info</h3>
+                <p class="feature-description">Trained on histopathology images for lymphoma diagnosis.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-left">Powered by <strong>Flask & AI</strong></p>
+            <p class="footer-right">© 2026 LymphoDetect</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

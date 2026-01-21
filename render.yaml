@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: lymphoma-classifier
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app --config gunicorn_config.py
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: MODEL_MODE
+        value: REAL
+    disk:
+      name: model-storage
+      mountPath: /opt/render/project/src/model
+      sizeGB: 5
