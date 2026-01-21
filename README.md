@@ -12,4 +12,6 @@ I have experimented
   - Few-shot learning with CLIP model
   - Training a deep neural network after the CLIP model
 
-In addition, I have deployed the best performing model as a web app on Hugging Face Spaces (https://huggingface.co/spaces/jocelynthecoder/lymphoma-classifier), providing real-time predictions, confidence scores, and interpretable outputs for scalable, accessible clinical integration.
+In addition, I have deployed the best performing model as a web app on [Hugging Face Spaces](https://huggingface.co/spaces/jocelynthecoder/lymphoma-classifier), providing real-time predictions, confidence scores, and interpretable outputs for scalable, accessible clinical integration.
+
+Data used in this project is downloaded from Webpathology.com and Wikipedia. [Google drive link](https://drive.google.com/drive/folders/1l28Poe6R_R7_OVGDLyV4HUX8SAJS_Mfe)
